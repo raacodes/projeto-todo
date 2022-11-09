@@ -21,9 +21,7 @@ import br.com.magnasistemas.projetotodo.dtos.TodoDto;
 import br.com.magnasistemas.projetotodo.entities.Todo;
 import br.com.magnasistemas.projetotodo.entities.Usuario;
 import br.com.magnasistemas.projetotodo.service.TodoService;
-import br.com.magnasistemas.projetotodo.repositories.UsuarioRepositories;
 import br.com.magnasistemas.projetotodo.service.UsuarioService;
-import br.com.magnasistemas.projetotodo.repositories.TodoRepositories;
 
 @RestController
 @RequestMapping("/todos")

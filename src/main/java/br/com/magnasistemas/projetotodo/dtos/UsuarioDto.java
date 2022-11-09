@@ -1,7 +1,7 @@
 package br.com.magnasistemas.projetotodo.dtos;
 
 import java.util.List;
-import br.com.magnasistemas.projetotodo.repositories.UsuarioRepositories;
+
 import br.com.magnasistemas.projetotodo.entities.Todo;
 
 public class UsuarioDto {

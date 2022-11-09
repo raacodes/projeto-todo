@@ -7,7 +7,7 @@ import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import br.com.magnasistemas.projetotodo.entities.Usuario;
+
 import br.com.magnasistemas.projetotodo.entities.Todo;
 import br.com.magnasistemas.projetotodo.repositories.TodoRepositories;
 

@@ -9,8 +9,6 @@ import br.com.magnasistemas.projetotodo.entities.Todo;
 import br.com.magnasistemas.projetotodo.entities.Usuario;
 import br.com.magnasistemas.projetotodo.service.TodoService;
 import br.com.magnasistemas.projetotodo.service.UsuarioService;
-import br.com.magnasistemas.projetotodo.repositories.TodoRepositories;
-import br.com.magnasistemas.projetotodo.repositories.UsuarioRepositories;
 
 @SpringBootApplication
 public class ProjetoTodoApplication implements CommandLineRunner {
