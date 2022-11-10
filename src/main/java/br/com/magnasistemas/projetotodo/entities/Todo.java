@@ -25,11 +25,11 @@ public class Todo {
 	public Todo() {
 		
 	}
-	
-	public Todo(Long id, String nota, Status modelo) {
+
+	public Todo(Long id, String nota, Status status) {
 		this.id = id;
 		this.nota = nota;
-		this.status = modelo;
+		this.status = status;
 	}
 
 	public Long getId() {
@@ -48,15 +48,12 @@ public class Todo {
 		this.nota = nota;
 	}
 
-	public Status getModelo() {
+	public Status getStatus() {
 		return status;
 	}
 
-	public void setModelo(Status modelo) {
-		this.status = modelo;
+	public void setStatus(Status status) {
+		this.status = status;
 	}
-	
-	
-	
 	
 }
