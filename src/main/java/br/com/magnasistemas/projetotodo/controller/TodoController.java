@@ -1,7 +1,5 @@
 package br.com.magnasistemas.projetotodo.controller;
 
-import java.util.NoSuchElementException;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -18,10 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.magnasistemas.projetotodo.dtos.TodoDto;
-import br.com.magnasistemas.projetotodo.dtos.UsuarioDto;
-import br.com.magnasistemas.projetotodo.entities.TodoEntity;
 import br.com.magnasistemas.projetotodo.service.TodoService;
-import br.com.magnasistemas.projetotodo.service.UsuarioService;
 
 @RestController
 @RequestMapping("/todos")

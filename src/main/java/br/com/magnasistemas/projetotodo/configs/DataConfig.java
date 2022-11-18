@@ -1,9 +1,6 @@
 package br.com.magnasistemas.projetotodo.configs;
 
-import java.text.DateFormat;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
-import java.util.Locale;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
