@@ -2,13 +2,13 @@ package br.com.magnasistemas.projetotodo.dtos;
 
 import java.util.List;
 
-import br.com.magnasistemas.projetotodo.entities.Todo;
+import br.com.magnasistemas.projetotodo.entities.TodoEntity;
 
 public class UsuarioDto {
 
 	private String usuario;
 	private String senha;
-	private List<Todo> todoList;
+	private List<TodoEntity> todoList;
 	
 	public String getUsuario() {
 		return usuario;
@@ -22,10 +22,10 @@ public class UsuarioDto {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	public List<Todo> getTodoList() {
+	public List<TodoEntity> getTodoList() {
 		return todoList;
 	}
-	public void setTodoList(List<Todo> todoList) {
+	public void setTodoList(List<TodoEntity> todoList) {
 		this.todoList = todoList;
 	}
 	

@@ -8,7 +8,7 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.magnasistemas.projetotodo.entities.Usuario;
+import br.com.magnasistemas.projetotodo.entities.UsuarioEntity;
 import br.com.magnasistemas.projetotodo.repositories.UsuarioRepositories;
 
 @Service
@@ -18,20 +18,20 @@ public class UsuarioService {
 	UsuarioRepositories usuarioRepositories;
 
 	@Transactional
-	public Usuario save(Usuario usuario) {
+	public UsuarioEntity save(UsuarioEntity usuario) {
 		return usuarioRepositories.save(usuario);
 	}
 
-	public List<Usuario> findAll() {
+	public List<UsuarioEntity> findAll() {
 		return usuarioRepositories.findAll();
 	}
 
-	public Optional<Usuario> findById(Long id) {
+	public Optional<UsuarioEntity> findById(Long id) {
 		return usuarioRepositories.findById(id);
 	}
 
 	@Transactional
-	public void delete(Usuario usuario) {
+	public void delete(UsuarioEntity usuario) {
 		usuarioRepositories.delete(usuario);
 		
 	}

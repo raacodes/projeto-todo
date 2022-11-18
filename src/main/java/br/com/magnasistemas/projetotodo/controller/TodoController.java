@@ -18,8 +18,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.magnasistemas.projetotodo.dtos.TodoDto;
-import br.com.magnasistemas.projetotodo.entities.Todo;
-import br.com.magnasistemas.projetotodo.entities.Usuario;
+import br.com.magnasistemas.projetotodo.entities.TodoEntity;
+import br.com.magnasistemas.projetotodo.entities.UsuarioEntity;
 import br.com.magnasistemas.projetotodo.service.TodoService;
 import br.com.magnasistemas.projetotodo.service.UsuarioService;
 
@@ -33,20 +33,20 @@ public class TodoController {
 	private UsuarioService usuarioService;
 	
 	@GetMapping
-	public ResponseEntity<List<Todo>> listarTodos() {
+	public ResponseEntity<List<TodoEntity>> listarTodos() {
 		return ResponseEntity.status(HttpStatus.OK).body(todoService.findAll());
 	}
 
 	@GetMapping("/{todoId}")
 	public ResponseEntity<Object> listarUmaNota(@PathVariable Long todoId) {
-		Optional<Todo> notaOptional = todoService.findById(todoId);
+		Optional<TodoEntity> notaOptional = todoService.findById(todoId);
 		return ResponseEntity.status(HttpStatus.OK).body(notaOptional.get());
 	}
 
 	@PutMapping("/{todoId}")
 	public ResponseEntity<Object> atualizaNota(@PathVariable Long todoId, @RequestBody TodoDto todoDto) {
-		Optional<Todo> notaOptional = todoService.findById(todoId);
-		var todo = new Todo();
+		Optional<TodoEntity> notaOptional = todoService.findById(todoId);
+		var todo = new TodoEntity();
 		BeanUtils.copyProperties(todoDto, todo);
 		todo.setId(notaOptional.get().getId());
 		return ResponseEntity.status(HttpStatus.OK).body(todoService.save(todo));
@@ -54,8 +54,8 @@ public class TodoController {
 	
 	@PostMapping("/{usuarioId}")
 	public ResponseEntity<Object> notaCadastro(@PathVariable Long usuarioId, @RequestBody TodoDto todoDto){
-		Usuario usuario = usuarioService.findById(usuarioId).orElseThrow(NoSuchElementException::new);
-		var todo = new Todo();
+		UsuarioEntity usuario = usuarioService.findById(usuarioId).orElseThrow(NoSuchElementException::new);
+		var todo = new TodoEntity();
 		BeanUtils.copyProperties(todoDto, todo);
 		todo.setNota(todoDto.getNota());
 		usuario.getTodoList().add(todo);
@@ -64,8 +64,8 @@ public class TodoController {
 	
 	@DeleteMapping("/{usuarioId}/{todoId}")
 	public ResponseEntity<Object> deleteNota(@PathVariable Long usuarioId,@PathVariable Long todoId){
-        Usuario usuario = usuarioService.findById(usuarioId).orElseThrow(NoSuchElementException::new);
-        Todo todo = todoService.findById(todoId).orElseThrow(NoSuchElementException::new);
+        UsuarioEntity usuario = usuarioService.findById(usuarioId).orElseThrow(NoSuchElementException::new);
+        TodoEntity todo = todoService.findById(todoId).orElseThrow(NoSuchElementException::new);
         usuario.getTodoList().remove(todo);
         todoService.delete(todo);
         return ResponseEntity.status(HttpStatus.OK).body("Nota deletado com sucesso!");

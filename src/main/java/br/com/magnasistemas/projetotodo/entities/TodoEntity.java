@@ -12,7 +12,7 @@ import br.com.magnasistemas.projetotodo.enums.Status;
 
 @Entity
 @Table(name = "tb_todo")
-public class Todo {
+public class TodoEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,11 +22,11 @@ public class Todo {
 	private Status status = Status.NAO_INICIADO;
 	
 	
-	public Todo() {
+	public TodoEntity() {
 		
 	}
 
-	public Todo(Long id, String nota, Status status) {
+	public TodoEntity(Long id, String nota, Status status) {
 		this.id = id;
 		this.nota = nota;
 		this.status = status;

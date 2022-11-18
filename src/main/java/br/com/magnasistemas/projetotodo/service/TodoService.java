@@ -8,7 +8,7 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.magnasistemas.projetotodo.entities.Todo;
+import br.com.magnasistemas.projetotodo.entities.TodoEntity;
 import br.com.magnasistemas.projetotodo.repositories.TodoRepositories;
 
 @Service
@@ -18,20 +18,20 @@ public class TodoService {
 	TodoRepositories todoRepositories;
 
 	@Transactional
-	public Todo save(Todo todo) {
+	public TodoEntity save(TodoEntity todo) {
 		return todoRepositories.save(todo);
 	}
 
-	public List<Todo> findAll() {
+	public List<TodoEntity> findAll() {
 		return todoRepositories.findAll();
 	}
 
-	public Optional<Todo> findById(Long id) {
+	public Optional<TodoEntity> findById(Long id) {
 		return todoRepositories.findById(id);
 	}
 
 	@Transactional
-	public void delete(Todo todo) {
+	public void delete(TodoEntity todo) {
 		todoRepositories.delete(todo);
 
 	}

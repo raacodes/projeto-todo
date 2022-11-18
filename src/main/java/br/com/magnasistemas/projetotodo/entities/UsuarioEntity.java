@@ -13,7 +13,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_user")
-public class Usuario {
+public class UsuarioEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,12 +22,12 @@ public class Usuario {
 	private String senha;
 	
 	@OneToMany(cascade = CascadeType.ALL)
-	private List<Todo> todoList = new ArrayList<>();
+	private List<TodoEntity> todoList = new ArrayList<>();
 	
-	public Usuario() {
+	public UsuarioEntity() {
     }
 
-	public Usuario(Long id, String usuario, String senha, List<Todo> todoList) {
+	public UsuarioEntity(Long id, String usuario, String senha, List<TodoEntity> todoList) {
 		this.id = id;
 		this.usuario = usuario;
 		this.senha = senha;
@@ -58,11 +58,11 @@ public class Usuario {
 		this.senha = senha;
 	}
 
-	public List<Todo> getTodoList() {
+	public List<TodoEntity> getTodoList() {
 		return todoList;
 	}
 
-	public void setTodoList(List<Todo> todoList) {
+	public void setTodoList(List<TodoEntity> todoList) {
 		this.todoList = todoList;
 	}
 	

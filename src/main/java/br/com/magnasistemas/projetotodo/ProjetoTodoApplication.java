@@ -5,8 +5,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import br.com.magnasistemas.projetotodo.entities.Todo;
-import br.com.magnasistemas.projetotodo.entities.Usuario;
+import br.com.magnasistemas.projetotodo.entities.TodoEntity;
+import br.com.magnasistemas.projetotodo.entities.UsuarioEntity;
 import br.com.magnasistemas.projetotodo.service.TodoService;
 import br.com.magnasistemas.projetotodo.service.UsuarioService;
 
@@ -25,11 +25,11 @@ public class ProjetoTodoApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		Usuario usuario = new Usuario();
+		UsuarioEntity usuario = new UsuarioEntity();
 		usuario.setUsuario("Renato");
 		usuario.setSenha("123456");
 
-		Todo todo = new Todo();
+		TodoEntity todo = new TodoEntity();
 		todo.setNota("Testando todo list");
 
 		usuario.getTodoList().add(todo);
