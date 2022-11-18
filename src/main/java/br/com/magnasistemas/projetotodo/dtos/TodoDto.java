@@ -6,13 +6,17 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import br.com.magnasistemas.projetotodo.entities.UsuarioEntity;
 import br.com.magnasistemas.projetotodo.enums.Status;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 public class TodoDto {
 
 	private Long id;
+	@Schema(example = "Incluindo uma nota tarefa")
 	private String titulo;
+	@Schema(example = "Incluindo uma descrição")
 	private String descricao;
 	private UsuarioEntity usuarioEntity;
+	@Schema(example = "AGUARDANDO")
 	private Status status;
 	private LocalDateTime dataCriacao;
 	

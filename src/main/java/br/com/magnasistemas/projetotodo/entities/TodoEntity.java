@@ -16,6 +16,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import br.com.magnasistemas.projetotodo.enums.Status;
 
+
 @Entity
 @Table(name = "tb_todo")
 public class TodoEntity {
