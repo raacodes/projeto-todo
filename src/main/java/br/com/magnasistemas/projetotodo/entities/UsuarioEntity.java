@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+
 @Entity
 @Table(name = "tb_user")
 public class UsuarioEntity {
@@ -20,13 +21,13 @@ public class UsuarioEntity {
 	private Long id;
 	private String usuario;
 	private String senha;
-	
-	@OneToMany(cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "usuarioEntity", cascade = CascadeType.ALL)
 	private List<TodoEntity> todoList = new ArrayList<>();
 	
 	public UsuarioEntity() {
-    }
 
+	}
+	
 	public UsuarioEntity(Long id, String usuario, String senha, List<TodoEntity> todoList) {
 		this.id = id;
 		this.usuario = usuario;

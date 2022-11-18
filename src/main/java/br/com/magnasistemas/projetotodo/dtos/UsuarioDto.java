@@ -6,10 +6,12 @@ import br.com.magnasistemas.projetotodo.entities.TodoEntity;
 
 public class UsuarioDto {
 
+	private Long id;
 	private String usuario;
 	private String senha;
 	private List<TodoEntity> todoList;
 	
+
 	public String getUsuario() {
 		return usuario;
 	}
@@ -27,6 +29,14 @@ public class UsuarioDto {
 	}
 	public void setTodoList(List<TodoEntity> todoList) {
 		this.todoList = todoList;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 	
 	
