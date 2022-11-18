@@ -7,6 +7,8 @@ import java.util.Optional;
 
 import javax.transaction.Transactional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -22,22 +24,22 @@ import br.com.magnasistemas.projetotodo.repositories.UsuarioRepositories;
 @Service
 public class TodoService {
 
+	private static Logger LOGGER = LoggerFactory.getLogger(TodoService.class);
+	
 	@Autowired
 	TodoRepositories todoRepositories;
 	@Autowired
 	UsuarioRepositories usuarioRepositories;
 
 	public Page<TodoDto> findAll(Pageable page) {
+		LOGGER.info("Listando tarefas cadastradas");
 		return todoRepositories.findAll(page).map(this::converterEntityParaDTO);
 	}
 
 	public TodoDto findById(Long id) {
 		TodoEntity todo = todoRepositories.findById(id).orElseThrow(NoSuchElementException::new);
+		LOGGER.info("Buscando tarefa com o id: [{}]", id);
 		return converterEntityParaDTO(todo);
-	}
-
-	public Optional<TodoEntity> findByNota(Long id) {
-		return todoRepositories.findById(id);
 	}
 
 	public void salvaNotaUsuario(Long usuarioId, TodoDto todoDto) {
@@ -48,11 +50,13 @@ public class TodoService {
 		todo.setStatus(todoDto.getStatus());
 		todo.setUsuarioEntity(usuario.get());
 		todo.setDataCriacao(LocalDateTime.now(ZoneId.of("UTC")));
+		LOGGER.info("Criando uma nova tarefa");
 		todoRepositories.save(converterDTOParaEntity(todo));
 	}
 
 	@Transactional
 	public void deletarTodo(Long id) {
+		LOGGER.info("Deletando tarefa com id [{}]", id);
 		todoRepositories.deleteById(id);
 	}
 
@@ -77,7 +81,7 @@ public class TodoService {
 			item.setStatus(todoDto.getStatus());
 			return item;
 		}).orElseThrow(NoSuchElementException::new);
-
+		LOGGER.info("Atualizando tarefa com id: [{}] ", id);
 		return converterEntityParaDTO(entidade);
 	}
 

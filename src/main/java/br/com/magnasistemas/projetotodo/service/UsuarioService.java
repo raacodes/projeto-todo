@@ -4,6 +4,8 @@ import java.util.NoSuchElementException;
 
 import javax.transaction.Transactional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -17,30 +19,31 @@ import br.com.magnasistemas.projetotodo.repositories.UsuarioRepositories;
 @Service
 public class UsuarioService {
 
+	private static Logger LOGGER = LoggerFactory.getLogger(UsuarioService.class);
+
 	@Autowired
 	UsuarioRepositories usuarioRepositories;
 
 	public Page<UsuarioDto> listarUsuarios(Pageable page) {
+		LOGGER.info("Listando usuários cadastradas");
 		return usuarioRepositories.findAll(page).map(this::converterEntityParaDTO);
 	}
 
 	public UsuarioDto findById(Long id) {
 		UsuarioEntity usuario = usuarioRepositories.findById(id).orElseThrow(NoSuchElementException::new);
+		LOGGER.info("Buscando usuario com o id: [{}]", id);
 		return converterEntityParaDTO(usuario);
 	}
 
-//	@Transactional
-//	public void salvarNovoUsuario(UsuarioDto usuariodto) {
-//		usuarioRepositories.save(converterDTOParaEntity(usuariodto));
-//	}
-	
 	@Transactional
 	public void salvarNovoUsuario(UsuarioDto usuariodto) {
+		LOGGER.info("Salvando um novo usuário");
 		usuarioRepositories.save(converterDTOParaEntity(usuariodto));
 	}
 
 	@Transactional
 	public void deletarUsuario(Long id) {
+		LOGGER.info("Deletando o usuário com a id: [{}]", id);
 		usuarioRepositories.deleteById(id);
 	}
 
@@ -51,7 +54,7 @@ public class UsuarioService {
 			item.setSenha(usuarioDto.getSenha());
 			return item;
 		}).orElseThrow(NoSuchElementException::new);
-
+		LOGGER.info("Atualizando usuário com id: [{}] ", id);
 		return converterEntityParaDTO(entidade);
 	}
 
@@ -66,6 +69,5 @@ public class UsuarioService {
 		BeanUtils.copyProperties(usuarioEntity, usuarioDto);
 		return usuarioDto;
 	}
-	
 
 }
