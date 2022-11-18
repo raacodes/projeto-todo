@@ -11,12 +11,9 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import br.com.magnasistemas.projetotodo.dtos.TodoDto;
-import br.com.magnasistemas.projetotodo.dtos.UsuarioDto;
 import br.com.magnasistemas.projetotodo.entities.TodoEntity;
 import br.com.magnasistemas.projetotodo.entities.UsuarioEntity;
 import br.com.magnasistemas.projetotodo.repositories.TodoRepositories;
