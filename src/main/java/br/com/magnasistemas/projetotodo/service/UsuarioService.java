@@ -1,7 +1,5 @@
 package br.com.magnasistemas.projetotodo.service;
 
-import java.util.NoSuchElementException;
-
 import javax.transaction.Transactional;
 
 import org.slf4j.Logger;
@@ -14,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import br.com.magnasistemas.projetotodo.dtos.UsuarioDto;
 import br.com.magnasistemas.projetotodo.entities.UsuarioEntity;
+import br.com.magnasistemas.projetotodo.exception.BadRequestException;
 import br.com.magnasistemas.projetotodo.repositories.UsuarioRepositories;
 
 @Service
@@ -30,7 +29,7 @@ public class UsuarioService {
 	}
 
 	public UsuarioDto findById(Long id) {
-		UsuarioEntity usuario = usuarioRepositories.findById(id).orElseThrow(NoSuchElementException::new);
+		UsuarioEntity usuario = usuarioRepositories.findById(id).orElseThrow(() -> new BadRequestException("Não foi possível encontrar o usuário com o id: " + id));
 		LOGGER.info("Buscando usuario com o id: [{}]", id);
 		return converterEntityParaDTO(usuario);
 	}
@@ -53,7 +52,7 @@ public class UsuarioService {
 			item.setUsuario(usuarioDto.getUsuario());
 			item.setSenha(usuarioDto.getSenha());
 			return item;
-		}).orElseThrow(NoSuchElementException::new);
+		}).orElseThrow(() -> new RuntimeException("Não foi possível encontrar o usuário com o id: " + id));
 		LOGGER.info("Atualizando usuário com id: [{}] ", id);
 		return converterEntityParaDTO(entidade);
 	}

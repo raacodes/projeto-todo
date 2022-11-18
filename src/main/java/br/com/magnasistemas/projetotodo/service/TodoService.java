@@ -2,7 +2,6 @@ package br.com.magnasistemas.projetotodo.service;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
-import java.util.NoSuchElementException;
 import java.util.Optional;
 
 import javax.transaction.Transactional;
@@ -18,6 +17,7 @@ import org.springframework.stereotype.Service;
 import br.com.magnasistemas.projetotodo.dtos.TodoDto;
 import br.com.magnasistemas.projetotodo.entities.TodoEntity;
 import br.com.magnasistemas.projetotodo.entities.UsuarioEntity;
+import br.com.magnasistemas.projetotodo.exception.BadRequestException;
 import br.com.magnasistemas.projetotodo.repositories.TodoRepositories;
 import br.com.magnasistemas.projetotodo.repositories.UsuarioRepositories;
 
@@ -37,7 +37,7 @@ public class TodoService {
 	}
 
 	public TodoDto findById(Long id) {
-		TodoEntity todo = todoRepositories.findById(id).orElseThrow(NoSuchElementException::new);
+		TodoEntity todo = todoRepositories.findById(id).orElseThrow(() -> new BadRequestException("Não foi possível encontrar a tarefa com o id: " + id));
 		LOGGER.info("Buscando tarefa com o id: [{}]", id);
 		return converterEntityParaDTO(todo);
 	}
@@ -80,7 +80,7 @@ public class TodoService {
 			item.setDescricao(todoDto.getDescricao());
 			item.setStatus(todoDto.getStatus());
 			return item;
-		}).orElseThrow(NoSuchElementException::new);
+		}).orElseThrow(() -> new RuntimeException("Não foi possível encontrar a tarefa com o id: " + id));
 		LOGGER.info("Atualizando tarefa com id: [{}] ", id);
 		return converterEntityParaDTO(entidade);
 	}

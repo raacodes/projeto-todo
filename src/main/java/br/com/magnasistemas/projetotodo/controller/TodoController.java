@@ -85,7 +85,7 @@ public class TodoController {
 	@DeleteMapping("/{todoId}")
 	public ResponseEntity<TodoDto> deleteUsuario(@PathVariable Long todoId) {
 		todoService.deletarTodo(todoId);
-		return ResponseEntity.status(HttpStatus.OK).build();
+		return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
 	}
 
 }

@@ -60,7 +60,7 @@ public class UsuarioController {
 	@DeleteMapping("/{usuarioId}")
 	public ResponseEntity<UsuarioDto> deleteUsuario(@PathVariable Long usuarioId) {
 		usuarioService.deletarUsuario(usuarioId);
-		return ResponseEntity.status(HttpStatus.OK).build();
+		return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
 	}
 
 	@ApiResponses( value ={
