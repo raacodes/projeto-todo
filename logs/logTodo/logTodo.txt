@@ -12494,3 +12494,18 @@ Caused by: java.lang.Error: Unresolved compilation problems:
 { "timestamp": 18-11-2022 14:09:47.829, "message": Init duration for springdoc-openapi is: 26 ms,
 				"logger_name": o.s.api.AbstractOpenApiResource, "thread_name": [http-nio-8080-exec-4], "level":
 				INFO  }
+{ "timestamp": 18-11-2022 14:11:24.993, "message": Closing JPA EntityManagerFactory for persistence unit 'default',
+				"logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [SpringApplicationShutdownHook], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 14:11:24.994, "message": HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down',
+				"logger_name": o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl, "thread_name": [SpringApplicationShutdownHook], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 14:11:25.392, "message": Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214],
+				"logger_name": o.s.b.f.s.DisposableBeanAdapter, "thread_name": [SpringApplicationShutdownHook], "level":
+				WARN  }
+{ "timestamp": 18-11-2022 14:11:25.392, "message": HikariPool-104 - Shutdown initiated...,
+				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 14:11:25.392, "message": HikariPool-104 - Shutdown completed.,
+				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level":
+				INFO  }
