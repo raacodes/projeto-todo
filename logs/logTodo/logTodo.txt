@@ -1,783 +1,90 @@
-{ "timestamp": 18-11-2022 11:36:07.485, "message": Starting ProjetoTodoApplication using Java 17.0.4.1 on pop-os with PID 8440 (/home/lenovo/Documents/repositorios/projeto-todo/target/classes started by lenovo in /home/lenovo/Documents/repositorios/projeto-todo),
+{ "timestamp": 18-11-2022 11:44:00.485, "message": iniciando API todo,
+				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [main], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 11:44:00.612, "message": iniciando API todo,
 				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
 				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.485, "message": No active profile set, falling back to 1 default profile: "default",
+{ "timestamp": 18-11-2022 11:44:00.851, "message": Starting ProjetoTodoApplication using Java 17.0.4.1 on pop-os with PID 21304 (/home/lenovo/Documents/repositorios/projeto-todo/target/classes started by lenovo in /home/lenovo/Documents/repositorios/projeto-todo),
 				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
 				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.524, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode.,
+{ "timestamp": 18-11-2022 11:44:00.852, "message": No active profile set, falling back to 1 default profile: "default",
+				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 11:44:00.896, "message": Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable,
+				"logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 11:44:00.896, "message": For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG',
+				"logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 11:44:01.410, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode.,
 				"logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level":
 				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.527, "message": Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.,
+{ "timestamp": 18-11-2022 11:44:01.452, "message": Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.,
 				"logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level":
 				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.547, "message": Tomcat initialized with port(s): 8080 (http),
+{ "timestamp": 18-11-2022 11:44:01.912, "message": Tomcat initialized with port(s): 8080 (http),
 				"logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level":
 				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.547, "message": Starting service [Tomcat],
+{ "timestamp": 18-11-2022 11:44:01.919, "message": Initializing ProtocolHandler ["http-nio-8080"],
+				"logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 11:44:01.919, "message": Starting service [Tomcat],
 				"logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level":
 				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.547, "message": Starting Servlet engine: [Apache Tomcat/9.0.68],
+{ "timestamp": 18-11-2022 11:44:01.920, "message": Starting Servlet engine: [Apache Tomcat/9.0.68],
 				"logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level":
 				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.550, "message": Initializing Spring embedded WebApplicationContext,
-				"logger_name": o.a.c.c.C.[.[localhost].[/], "thread_name": [restartedMain], "level":
+{ "timestamp": 18-11-2022 11:44:01.973, "message": Initializing Spring embedded WebApplicationContext,
+				"logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [restartedMain], "level":
 				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.550, "message": Root WebApplicationContext: initialization completed in 65 ms,
+{ "timestamp": 18-11-2022 11:44:01.973, "message": Root WebApplicationContext: initialization completed in 1076 ms,
 				"logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level":
 				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.554, "message": HikariPool-36 - Starting...,
+{ "timestamp": 18-11-2022 11:44:02.004, "message": HikariPool-1 - Starting...,
 				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level":
 				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.555, "message": HikariPool-36 - Start completed.,
+{ "timestamp": 18-11-2022 11:44:02.135, "message": HikariPool-1 - Start completed.,
 				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level":
 				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.555, "message": H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bdtodo',
+{ "timestamp": 18-11-2022 11:44:02.143, "message": H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bdtodo',
 				"logger_name": o.s.b.a.h.H2ConsoleAutoConfiguration, "thread_name": [restartedMain], "level":
 				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.562, "message": HHH000204: Processing PersistenceUnitInfo [name: default],
+{ "timestamp": 18-11-2022 11:44:02.245, "message": HHH000204: Processing PersistenceUnitInfo [name: default],
 				"logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level":
 				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.563, "message": HHH000400: Using dialect: org.hibernate.dialect.H2Dialect,
+{ "timestamp": 18-11-2022 11:44:02.279, "message": HHH000412: Hibernate ORM core version 5.6.12.Final,
+				"logger_name": org.hibernate.Version, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 11:44:02.394, "message": HCANN000001: Hibernate Commons Annotations {5.1.2.Final},
+				"logger_name": o.h.annotations.common.Version, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 11:44:02.467, "message": HHH000400: Using dialect: org.hibernate.dialect.H2Dialect,
 				"logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level":
 				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.575, "message": HHH000476: Executing import script 'file:/home/lenovo/Documents/repositorios/projeto-todo/target/classes/import.sql',
+{ "timestamp": 18-11-2022 11:44:02.833, "message": HHH000476: Executing import script 'file:/home/lenovo/Documents/repositorios/projeto-todo/target/classes/import.sql',
 				"logger_name": o.h.t.s.internal.SchemaCreatorImpl, "thread_name": [restartedMain], "level":
 				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.575, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform],
+{ "timestamp": 18-11-2022 11:44:02.836, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform],
 				"logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level":
 				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.576, "message": Initialized JPA EntityManagerFactory for persistence unit 'default',
+{ "timestamp": 18-11-2022 11:44:02.841, "message": Initialized JPA EntityManagerFactory for persistence unit 'default',
 				"logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level":
 				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.618, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning,
+{ "timestamp": 18-11-2022 11:44:03.189, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning,
 				"logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level":
 				WARN  }
-{ "timestamp": 18-11-2022 11:36:07.708, "message": LiveReload server is running on port 35729,
+{ "timestamp": 18-11-2022 11:44:03.801, "message": LiveReload server is running on port 35729,
 				"logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level":
 				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.711, "message": Tomcat started on port(s): 8080 (http) with context path '',
+{ "timestamp": 18-11-2022 11:44:03.812, "message": Starting ProtocolHandler ["http-nio-8080"],
+				"logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 11:44:03.826, "message": Tomcat started on port(s): 8080 (http) with context path '',
 				"logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level":
 				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.713, "message": Started ProjetoTodoApplication in 0.241 seconds (JVM running for 6120.404),
+{ "timestamp": 18-11-2022 11:44:03.837, "message": Started ProjetoTodoApplication in 3.219 seconds (JVM running for 3.713),
 				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
 				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.714, "message": Condition evaluation unchanged,
-				"logger_name": o.s.b.d.a.ConditionEvaluationDeltaLoggingListener, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:07.714, "message": API iniciada com sucesso,
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.118, "message": Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications),
-				"logger_name": o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener, "thread_name": [File Watcher], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.120, "message": Stopping service [Tomcat],
-				"logger_name": o.a.catalina.core.StandardService, "thread_name": [Thread-151], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.124, "message": Closing JPA EntityManagerFactory for persistence unit 'default',
-				"logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [Thread-151], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.124, "message": HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down',
-				"logger_name": o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl, "thread_name": [Thread-151], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.326, "message": Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214],
-				"logger_name": o.s.b.f.s.DisposableBeanAdapter, "thread_name": [Thread-151], "level":
-				WARN  }
-{ "timestamp": 18-11-2022 11:36:15.327, "message": HikariPool-36 - Shutdown initiated...,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [Thread-151], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.327, "message": HikariPool-36 - Shutdown completed.,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [Thread-151], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.372, "message": iniciando API todo,
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.387, "message": Starting ProjetoTodoApplication using Java 17.0.4.1 on pop-os with PID 8440 (/home/lenovo/Documents/repositorios/projeto-todo/target/classes started by lenovo in /home/lenovo/Documents/repositorios/projeto-todo),
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.387, "message": No active profile set, falling back to 1 default profile: "default",
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.430, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode.,
-				"logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.433, "message": Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.,
-				"logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.468, "message": Tomcat initialized with port(s): 8080 (http),
-				"logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.469, "message": Starting service [Tomcat],
-				"logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.469, "message": Starting Servlet engine: [Apache Tomcat/9.0.68],
-				"logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.472, "message": Initializing Spring embedded WebApplicationContext,
-				"logger_name": o.a.c.c.C.[.[localhost].[/], "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.472, "message": Root WebApplicationContext: initialization completed in 84 ms,
-				"logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.476, "message": HikariPool-37 - Starting...,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.477, "message": HikariPool-37 - Start completed.,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.477, "message": H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bdtodo',
-				"logger_name": o.s.b.a.h.H2ConsoleAutoConfiguration, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.485, "message": HHH000204: Processing PersistenceUnitInfo [name: default],
-				"logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.486, "message": HHH000400: Using dialect: org.hibernate.dialect.H2Dialect,
-				"logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.500, "message": HHH000476: Executing import script 'file:/home/lenovo/Documents/repositorios/projeto-todo/target/classes/import.sql',
-				"logger_name": o.h.t.s.internal.SchemaCreatorImpl, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.501, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform],
-				"logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.501, "message": Initialized JPA EntityManagerFactory for persistence unit 'default',
-				"logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.545, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning,
-				"logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level":
-				WARN  }
-{ "timestamp": 18-11-2022 11:36:15.631, "message": LiveReload server is running on port 35729,
-				"logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.635, "message": Tomcat started on port(s): 8080 (http) with context path '',
-				"logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.637, "message": Started ProjetoTodoApplication in 0.263 seconds (JVM running for 6128.328),
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.638, "message": Condition evaluation unchanged,
-				"logger_name": o.s.b.d.a.ConditionEvaluationDeltaLoggingListener, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:15.639, "message": API iniciada com sucesso,
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.076, "message": Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications),
-				"logger_name": o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener, "thread_name": [File Watcher], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.078, "message": Stopping service [Tomcat],
-				"logger_name": o.a.catalina.core.StandardService, "thread_name": [Thread-155], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.082, "message": Closing JPA EntityManagerFactory for persistence unit 'default',
-				"logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [Thread-155], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.082, "message": HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down',
-				"logger_name": o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl, "thread_name": [Thread-155], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.284, "message": Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214],
-				"logger_name": o.s.b.f.s.DisposableBeanAdapter, "thread_name": [Thread-155], "level":
-				WARN  }
-{ "timestamp": 18-11-2022 11:36:58.284, "message": HikariPool-37 - Shutdown initiated...,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [Thread-155], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.285, "message": HikariPool-37 - Shutdown completed.,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [Thread-155], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.322, "message": iniciando API todo,
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.339, "message": Starting ProjetoTodoApplication using Java 17.0.4.1 on pop-os with PID 8440 (/home/lenovo/Documents/repositorios/projeto-todo/target/classes started by lenovo in /home/lenovo/Documents/repositorios/projeto-todo),
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.339, "message": No active profile set, falling back to 1 default profile: "default",
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.383, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode.,
-				"logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.385, "message": Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.,
-				"logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.408, "message": Tomcat initialized with port(s): 8080 (http),
-				"logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.409, "message": Starting service [Tomcat],
-				"logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.409, "message": Starting Servlet engine: [Apache Tomcat/9.0.68],
-				"logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.412, "message": Initializing Spring embedded WebApplicationContext,
-				"logger_name": o.a.c.c.C.[.[localhost].[/], "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.412, "message": Root WebApplicationContext: initialization completed in 72 ms,
-				"logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.417, "message": HikariPool-38 - Starting...,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.418, "message": HikariPool-38 - Start completed.,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.418, "message": H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bdtodo',
-				"logger_name": o.s.b.a.h.H2ConsoleAutoConfiguration, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.425, "message": HHH000204: Processing PersistenceUnitInfo [name: default],
-				"logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.427, "message": HHH000400: Using dialect: org.hibernate.dialect.H2Dialect,
-				"logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.438, "message": HHH000476: Executing import script 'file:/home/lenovo/Documents/repositorios/projeto-todo/target/classes/import.sql',
-				"logger_name": o.h.t.s.internal.SchemaCreatorImpl, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.438, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform],
-				"logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.438, "message": Initialized JPA EntityManagerFactory for persistence unit 'default',
-				"logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.481, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning,
-				"logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level":
-				WARN  }
-{ "timestamp": 18-11-2022 11:36:58.565, "message": LiveReload server is running on port 35729,
-				"logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.568, "message": Tomcat started on port(s): 8080 (http) with context path '',
-				"logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.570, "message": Started ProjetoTodoApplication in 0.245 seconds (JVM running for 6171.26),
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.570, "message": Condition evaluation unchanged,
-				"logger_name": o.s.b.d.a.ConditionEvaluationDeltaLoggingListener, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:36:58.570, "message": API iniciada com sucesso,
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:15.529, "message": Initializing Spring DispatcherServlet 'dispatcherServlet',
-				"logger_name": o.a.c.c.C.[.[localhost].[/], "thread_name": [http-nio-8080-exec-2], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:15.529, "message": Initializing Servlet 'dispatcherServlet',
-				"logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8080-exec-2], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:15.530, "message": Completed initialization in 1 ms,
-				"logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8080-exec-2], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:15.546, "message": Criando uma nova tarefa com as informações [br.com.magnasistemas.projetotodo.dtos.TodoDto@677fb1f],
-				"logger_name": b.c.m.p.service.TodoService, "thread_name": [http-nio-8080-exec-2], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:31.998, "message": Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications),
-				"logger_name": o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener, "thread_name": [File Watcher], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.001, "message": Stopping service [Tomcat],
-				"logger_name": o.a.catalina.core.StandardService, "thread_name": [Thread-159], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.001, "message": Destroying Spring FrameworkServlet 'dispatcherServlet',
-				"logger_name": o.a.c.c.C.[.[localhost].[/], "thread_name": [Thread-159], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.005, "message": Closing JPA EntityManagerFactory for persistence unit 'default',
-				"logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [Thread-159], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.006, "message": HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down',
-				"logger_name": o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl, "thread_name": [Thread-159], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.207, "message": Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214],
-				"logger_name": o.s.b.f.s.DisposableBeanAdapter, "thread_name": [Thread-159], "level":
-				WARN  }
-{ "timestamp": 18-11-2022 11:37:32.208, "message": HikariPool-38 - Shutdown initiated...,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [Thread-159], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.208, "message": HikariPool-38 - Shutdown completed.,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [Thread-159], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.251, "message": iniciando API todo,
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.268, "message": Starting ProjetoTodoApplication using Java 17.0.4.1 on pop-os with PID 8440 (/home/lenovo/Documents/repositorios/projeto-todo/target/classes started by lenovo in /home/lenovo/Documents/repositorios/projeto-todo),
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.268, "message": No active profile set, falling back to 1 default profile: "default",
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.312, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode.,
-				"logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.315, "message": Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.,
-				"logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.338, "message": Tomcat initialized with port(s): 8080 (http),
-				"logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.338, "message": Starting service [Tomcat],
-				"logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.338, "message": Starting Servlet engine: [Apache Tomcat/9.0.68],
-				"logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.341, "message": Initializing Spring embedded WebApplicationContext,
-				"logger_name": o.a.c.c.C.[.[localhost].[/], "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.342, "message": Root WebApplicationContext: initialization completed in 73 ms,
-				"logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.346, "message": HikariPool-39 - Starting...,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.347, "message": HikariPool-39 - Start completed.,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.347, "message": H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bdtodo',
-				"logger_name": o.s.b.a.h.H2ConsoleAutoConfiguration, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.355, "message": HHH000204: Processing PersistenceUnitInfo [name: default],
-				"logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.356, "message": HHH000400: Using dialect: org.hibernate.dialect.H2Dialect,
-				"logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.368, "message": HHH000476: Executing import script 'file:/home/lenovo/Documents/repositorios/projeto-todo/target/classes/import.sql',
-				"logger_name": o.h.t.s.internal.SchemaCreatorImpl, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.369, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform],
-				"logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.369, "message": Initialized JPA EntityManagerFactory for persistence unit 'default',
-				"logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.414, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning,
-				"logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level":
-				WARN  }
-{ "timestamp": 18-11-2022 11:37:32.488, "message": LiveReload server is running on port 35729,
-				"logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.490, "message": Tomcat started on port(s): 8080 (http) with context path '',
-				"logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.492, "message": Started ProjetoTodoApplication in 0.238 seconds (JVM running for 6205.182),
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.492, "message": Condition evaluation unchanged,
-				"logger_name": o.s.b.d.a.ConditionEvaluationDeltaLoggingListener, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:32.492, "message": API iniciada com sucesso,
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:38.895, "message": Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications),
-				"logger_name": o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener, "thread_name": [File Watcher], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:38.897, "message": Stopping service [Tomcat],
-				"logger_name": o.a.catalina.core.StandardService, "thread_name": [Thread-163], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:38.902, "message": Closing JPA EntityManagerFactory for persistence unit 'default',
-				"logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [Thread-163], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:38.902, "message": HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down',
-				"logger_name": o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl, "thread_name": [Thread-163], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.104, "message": Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214],
-				"logger_name": o.s.b.f.s.DisposableBeanAdapter, "thread_name": [Thread-163], "level":
-				WARN  }
-{ "timestamp": 18-11-2022 11:37:39.104, "message": HikariPool-39 - Shutdown initiated...,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [Thread-163], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.105, "message": HikariPool-39 - Shutdown completed.,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [Thread-163], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.149, "message": iniciando API todo,
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.168, "message": Starting ProjetoTodoApplication using Java 17.0.4.1 on pop-os with PID 8440 (/home/lenovo/Documents/repositorios/projeto-todo/target/classes started by lenovo in /home/lenovo/Documents/repositorios/projeto-todo),
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.168, "message": No active profile set, falling back to 1 default profile: "default",
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.209, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode.,
-				"logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.213, "message": Finished Spring Data repository scanning in 3 ms. Found 2 JPA repository interfaces.,
-				"logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.235, "message": Tomcat initialized with port(s): 8080 (http),
-				"logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.236, "message": Starting service [Tomcat],
-				"logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.236, "message": Starting Servlet engine: [Apache Tomcat/9.0.68],
-				"logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.238, "message": Initializing Spring embedded WebApplicationContext,
-				"logger_name": o.a.c.c.C.[.[localhost].[/], "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.239, "message": Root WebApplicationContext: initialization completed in 71 ms,
-				"logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.242, "message": HikariPool-40 - Starting...,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.244, "message": HikariPool-40 - Start completed.,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.244, "message": H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bdtodo',
-				"logger_name": o.s.b.a.h.H2ConsoleAutoConfiguration, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.253, "message": HHH000204: Processing PersistenceUnitInfo [name: default],
-				"logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.255, "message": HHH000400: Using dialect: org.hibernate.dialect.H2Dialect,
-				"logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.267, "message": HHH000476: Executing import script 'file:/home/lenovo/Documents/repositorios/projeto-todo/target/classes/import.sql',
-				"logger_name": o.h.t.s.internal.SchemaCreatorImpl, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.268, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform],
-				"logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.268, "message": Initialized JPA EntityManagerFactory for persistence unit 'default',
-				"logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.314, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning,
-				"logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level":
-				WARN  }
-{ "timestamp": 18-11-2022 11:37:39.400, "message": LiveReload server is running on port 35729,
-				"logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.403, "message": Tomcat started on port(s): 8080 (http) with context path '',
-				"logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.404, "message": Started ProjetoTodoApplication in 0.253 seconds (JVM running for 6212.095),
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.405, "message": Condition evaluation unchanged,
-				"logger_name": o.s.b.d.a.ConditionEvaluationDeltaLoggingListener, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:39.405, "message": API iniciada com sucesso,
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:41.783, "message": Initializing Spring DispatcherServlet 'dispatcherServlet',
-				"logger_name": o.a.c.c.C.[.[localhost].[/], "thread_name": [http-nio-8080-exec-2], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:41.783, "message": Initializing Servlet 'dispatcherServlet',
-				"logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8080-exec-2], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:41.783, "message": Completed initialization in 0 ms,
-				"logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8080-exec-2], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:37:41.792, "message": Criando uma nova tarefa com as informações [br.com.magnasistemas.projetotodo.dtos.TodoDto@20dfaa4d],
-				"logger_name": b.c.m.p.service.TodoService, "thread_name": [http-nio-8080-exec-2], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:01.824, "message": Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications),
-				"logger_name": o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener, "thread_name": [File Watcher], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:01.827, "message": Stopping service [Tomcat],
-				"logger_name": o.a.catalina.core.StandardService, "thread_name": [Thread-167], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:01.827, "message": Destroying Spring FrameworkServlet 'dispatcherServlet',
-				"logger_name": o.a.c.c.C.[.[localhost].[/], "thread_name": [Thread-167], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:01.832, "message": Closing JPA EntityManagerFactory for persistence unit 'default',
-				"logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [Thread-167], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:01.832, "message": HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down',
-				"logger_name": o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl, "thread_name": [Thread-167], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.033, "message": Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214],
-				"logger_name": o.s.b.f.s.DisposableBeanAdapter, "thread_name": [Thread-167], "level":
-				WARN  }
-{ "timestamp": 18-11-2022 11:38:02.034, "message": HikariPool-40 - Shutdown initiated...,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [Thread-167], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.035, "message": HikariPool-40 - Shutdown completed.,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [Thread-167], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.078, "message": iniciando API todo,
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.094, "message": Starting ProjetoTodoApplication using Java 17.0.4.1 on pop-os with PID 8440 (/home/lenovo/Documents/repositorios/projeto-todo/target/classes started by lenovo in /home/lenovo/Documents/repositorios/projeto-todo),
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.094, "message": No active profile set, falling back to 1 default profile: "default",
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.134, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode.,
-				"logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.137, "message": Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.,
-				"logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.158, "message": Tomcat initialized with port(s): 8080 (http),
-				"logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.158, "message": Starting service [Tomcat],
-				"logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.158, "message": Starting Servlet engine: [Apache Tomcat/9.0.68],
-				"logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.161, "message": Initializing Spring embedded WebApplicationContext,
-				"logger_name": o.a.c.c.C.[.[localhost].[/], "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.161, "message": Root WebApplicationContext: initialization completed in 66 ms,
-				"logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.164, "message": HikariPool-41 - Starting...,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.165, "message": HikariPool-41 - Start completed.,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.165, "message": H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bdtodo',
-				"logger_name": o.s.b.a.h.H2ConsoleAutoConfiguration, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.173, "message": HHH000204: Processing PersistenceUnitInfo [name: default],
-				"logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.175, "message": HHH000400: Using dialect: org.hibernate.dialect.H2Dialect,
-				"logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.185, "message": HHH000476: Executing import script 'file:/home/lenovo/Documents/repositorios/projeto-todo/target/classes/import.sql',
-				"logger_name": o.h.t.s.internal.SchemaCreatorImpl, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.186, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform],
-				"logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.186, "message": Initialized JPA EntityManagerFactory for persistence unit 'default',
-				"logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.224, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning,
-				"logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level":
-				WARN  }
-{ "timestamp": 18-11-2022 11:38:02.307, "message": LiveReload server is running on port 35729,
-				"logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.311, "message": Tomcat started on port(s): 8080 (http) with context path '',
-				"logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.312, "message": Started ProjetoTodoApplication in 0.231 seconds (JVM running for 6235.003),
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.313, "message": Condition evaluation unchanged,
-				"logger_name": o.s.b.d.a.ConditionEvaluationDeltaLoggingListener, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:02.313, "message": API iniciada com sucesso,
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:06.203, "message": Initializing Spring DispatcherServlet 'dispatcherServlet',
-				"logger_name": o.a.c.c.C.[.[localhost].[/], "thread_name": [http-nio-8080-exec-2], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:06.203, "message": Initializing Servlet 'dispatcherServlet',
-				"logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8080-exec-2], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:06.203, "message": Completed initialization in 0 ms,
-				"logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8080-exec-2], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:06.211, "message": Criando uma nova tarefa com as informações [br.com.magnasistemas.projetotodo.dtos.TodoDto@c40cd8f],
-				"logger_name": b.c.m.p.service.TodoService, "thread_name": [http-nio-8080-exec-2], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:29.737, "message": Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications),
-				"logger_name": o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener, "thread_name": [File Watcher], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:29.739, "message": Stopping service [Tomcat],
-				"logger_name": o.a.catalina.core.StandardService, "thread_name": [Thread-171], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:29.740, "message": Destroying Spring FrameworkServlet 'dispatcherServlet',
-				"logger_name": o.a.c.c.C.[.[localhost].[/], "thread_name": [Thread-171], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:29.744, "message": Closing JPA EntityManagerFactory for persistence unit 'default',
-				"logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [Thread-171], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:29.744, "message": HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down',
-				"logger_name": o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl, "thread_name": [Thread-171], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:29.945, "message": Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214],
-				"logger_name": o.s.b.f.s.DisposableBeanAdapter, "thread_name": [Thread-171], "level":
-				WARN  }
-{ "timestamp": 18-11-2022 11:38:29.946, "message": HikariPool-41 - Shutdown initiated...,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [Thread-171], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:29.946, "message": HikariPool-41 - Shutdown completed.,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [Thread-171], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:29.993, "message": iniciando API todo,
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.009, "message": Starting ProjetoTodoApplication using Java 17.0.4.1 on pop-os with PID 8440 (/home/lenovo/Documents/repositorios/projeto-todo/target/classes started by lenovo in /home/lenovo/Documents/repositorios/projeto-todo),
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.009, "message": No active profile set, falling back to 1 default profile: "default",
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.050, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode.,
-				"logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.052, "message": Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.,
-				"logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.075, "message": Tomcat initialized with port(s): 8080 (http),
-				"logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.075, "message": Starting service [Tomcat],
-				"logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.075, "message": Starting Servlet engine: [Apache Tomcat/9.0.68],
-				"logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.079, "message": Initializing Spring embedded WebApplicationContext,
-				"logger_name": o.a.c.c.C.[.[localhost].[/], "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.079, "message": Root WebApplicationContext: initialization completed in 69 ms,
-				"logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.083, "message": HikariPool-42 - Starting...,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.084, "message": HikariPool-42 - Start completed.,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.084, "message": H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bdtodo',
-				"logger_name": o.s.b.a.h.H2ConsoleAutoConfiguration, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.091, "message": HHH000204: Processing PersistenceUnitInfo [name: default],
-				"logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.093, "message": HHH000400: Using dialect: org.hibernate.dialect.H2Dialect,
-				"logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.103, "message": HHH000476: Executing import script 'file:/home/lenovo/Documents/repositorios/projeto-todo/target/classes/import.sql',
-				"logger_name": o.h.t.s.internal.SchemaCreatorImpl, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.104, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform],
-				"logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.104, "message": Initialized JPA EntityManagerFactory for persistence unit 'default',
-				"logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.149, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning,
-				"logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level":
-				WARN  }
-{ "timestamp": 18-11-2022 11:38:30.233, "message": LiveReload server is running on port 35729,
-				"logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.236, "message": Tomcat started on port(s): 8080 (http) with context path '',
-				"logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.237, "message": Started ProjetoTodoApplication in 0.241 seconds (JVM running for 6262.928),
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.238, "message": Condition evaluation unchanged,
-				"logger_name": o.s.b.d.a.ConditionEvaluationDeltaLoggingListener, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:30.238, "message": API iniciada com sucesso,
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:32.724, "message": Initializing Spring DispatcherServlet 'dispatcherServlet',
-				"logger_name": o.a.c.c.C.[.[localhost].[/], "thread_name": [http-nio-8080-exec-2], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:32.724, "message": Initializing Servlet 'dispatcherServlet',
-				"logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8080-exec-2], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:32.724, "message": Completed initialization in 0 ms,
-				"logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8080-exec-2], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:32.733, "message": Criando uma nova tarefa,
-				"logger_name": b.c.m.p.service.TodoService, "thread_name": [http-nio-8080-exec-2], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:38:37.301, "message": Criando uma nova tarefa,
-				"logger_name": b.c.m.p.service.TodoService, "thread_name": [http-nio-8080-exec-3], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:19.746, "message": Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications),
-				"logger_name": o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener, "thread_name": [File Watcher], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:19.749, "message": Stopping service [Tomcat],
-				"logger_name": o.a.catalina.core.StandardService, "thread_name": [Thread-175], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:19.749, "message": Destroying Spring FrameworkServlet 'dispatcherServlet',
-				"logger_name": o.a.c.c.C.[.[localhost].[/], "thread_name": [Thread-175], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:19.753, "message": Closing JPA EntityManagerFactory for persistence unit 'default',
-				"logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [Thread-175], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:19.753, "message": HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down',
-				"logger_name": o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl, "thread_name": [Thread-175], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:19.955, "message": Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214],
-				"logger_name": o.s.b.f.s.DisposableBeanAdapter, "thread_name": [Thread-175], "level":
-				WARN  }
-{ "timestamp": 18-11-2022 11:40:19.955, "message": HikariPool-42 - Shutdown initiated...,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [Thread-175], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:19.956, "message": HikariPool-42 - Shutdown completed.,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [Thread-175], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.004, "message": iniciando API todo,
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.022, "message": Starting ProjetoTodoApplication using Java 17.0.4.1 on pop-os with PID 8440 (/home/lenovo/Documents/repositorios/projeto-todo/target/classes started by lenovo in /home/lenovo/Documents/repositorios/projeto-todo),
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.022, "message": No active profile set, falling back to 1 default profile: "default",
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.062, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode.,
-				"logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.065, "message": Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.,
-				"logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.090, "message": Tomcat initialized with port(s): 8080 (http),
-				"logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.090, "message": Starting service [Tomcat],
-				"logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.090, "message": Starting Servlet engine: [Apache Tomcat/9.0.68],
-				"logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.093, "message": Initializing Spring embedded WebApplicationContext,
-				"logger_name": o.a.c.c.C.[.[localhost].[/], "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.093, "message": Root WebApplicationContext: initialization completed in 70 ms,
-				"logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.096, "message": HikariPool-43 - Starting...,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.098, "message": HikariPool-43 - Start completed.,
-				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.098, "message": H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bdtodo',
-				"logger_name": o.s.b.a.h.H2ConsoleAutoConfiguration, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.106, "message": HHH000204: Processing PersistenceUnitInfo [name: default],
-				"logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.108, "message": HHH000400: Using dialect: org.hibernate.dialect.H2Dialect,
-				"logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.122, "message": HHH000476: Executing import script 'file:/home/lenovo/Documents/repositorios/projeto-todo/target/classes/import.sql',
-				"logger_name": o.h.t.s.internal.SchemaCreatorImpl, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.123, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform],
-				"logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.123, "message": Initialized JPA EntityManagerFactory for persistence unit 'default',
-				"logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.164, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning,
-				"logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level":
-				WARN  }
-{ "timestamp": 18-11-2022 11:40:20.238, "message": LiveReload server is running on port 35729,
-				"logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.240, "message": Tomcat started on port(s): 8080 (http) with context path '',
-				"logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.242, "message": Started ProjetoTodoApplication in 0.235 seconds (JVM running for 6372.932),
-				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.242, "message": Condition evaluation unchanged,
-				"logger_name": o.s.b.d.a.ConditionEvaluationDeltaLoggingListener, "thread_name": [restartedMain], "level":
-				INFO  }
-{ "timestamp": 18-11-2022 11:40:20.242, "message": API iniciada com sucesso,
+{ "timestamp": 18-11-2022 11:44:03.841, "message": API iniciada com sucesso,
 				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
 				INFO  }
