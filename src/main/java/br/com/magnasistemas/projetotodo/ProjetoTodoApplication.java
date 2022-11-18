@@ -11,7 +11,7 @@ import br.com.magnasistemas.projetotodo.service.TodoService;
 import br.com.magnasistemas.projetotodo.service.UsuarioService;
 
 @SpringBootApplication
-public class ProjetoTodoApplication implements CommandLineRunner {
+public class ProjetoTodoApplication {
 
 	@Autowired
 	private TodoService todoService;
@@ -20,22 +20,6 @@ public class ProjetoTodoApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProjetoTodoApplication.class, args);
-	}
-
-	@Override
-	public void run(String... args) throws Exception {
-
-		UsuarioEntity usuario = new UsuarioEntity();
-		usuario.setUsuario("Renato");
-		usuario.setSenha("123456");
-
-		TodoEntity todo = new TodoEntity();
-		todo.setNota("Testando todo list");
-
-		usuario.getTodoList().add(todo);
-
-		usuarioService.save(usuario);
-		todoService.save(todo);
 	}
 
 }
