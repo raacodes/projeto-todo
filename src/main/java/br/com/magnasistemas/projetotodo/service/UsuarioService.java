@@ -52,7 +52,7 @@ public class UsuarioService {
 			item.setUsuario(usuarioDto.getUsuario());
 			item.setSenha(usuarioDto.getSenha());
 			return item;
-		}).orElseThrow(() -> new RuntimeException("Não foi possível encontrar o usuário com o id: " + id));
+		}).orElseThrow(() -> new BadRequestException("Não foi possível encontrar o usuário com o id: " + id));
 		LOGGER.info("Atualizando usuário com id: [{}] ", id);
 		return converterEntityParaDTO(entidade);
 	}

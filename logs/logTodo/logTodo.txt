@@ -22383,3 +22383,129 @@ java.lang.RuntimeException: Não foi possível encontrar a tarefa com o id: 7
 { "timestamp": 18-11-2022 17:33:04.866, "message": Resolved [br.com.magnasistemas.projetotodo.exception.BadRequestException: Não foi possível encontrar a tarefa com o id: 7],
 				"logger_name": o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver, "thread_name": [http-nio-8080-exec-5], "level":
 				WARN  }
+{ "timestamp": 18-11-2022 17:36:37.522, "message": Closing JPA EntityManagerFactory for persistence unit 'default',
+				"logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [SpringApplicationShutdownHook], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:36:37.527, "message": HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down',
+				"logger_name": o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl, "thread_name": [SpringApplicationShutdownHook], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:36:37.857, "message": Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214],
+				"logger_name": o.s.b.f.s.DisposableBeanAdapter, "thread_name": [SpringApplicationShutdownHook], "level":
+				WARN  }
+{ "timestamp": 18-11-2022 17:36:37.858, "message": HikariPool-49 - Shutdown initiated...,
+				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:36:37.909, "message": HikariPool-49 - Shutdown completed.,
+				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [SpringApplicationShutdownHook], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:25.256, "message": iniciando API todo,
+				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [main], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:25.394, "message": iniciando API todo,
+				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:25.700, "message": HV000001: Hibernate Validator 6.2.5.Final,
+				"logger_name": o.h.validator.internal.util.Version, "thread_name": [background-preinit], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:25.705, "message": Starting ProjetoTodoApplication using Java 17.0.4.1 on pop-os with PID 74264 (/home/lenovo/Documents/repositorios/projeto-todo/target/classes started by lenovo in /home/lenovo/Documents/repositorios/projeto-todo),
+				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:25.705, "message": No active profile set, falling back to 1 default profile: "default",
+				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:25.745, "message": Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable,
+				"logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:25.745, "message": For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG',
+				"logger_name": o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:26.299, "message": Bootstrapping Spring Data JPA repositories in DEFAULT mode.,
+				"logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:26.335, "message": Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.,
+				"logger_name": o.s.d.r.c.RepositoryConfigurationDelegate, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:26.770, "message": Tomcat initialized with port(s): 8080 (http),
+				"logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:26.777, "message": Initializing ProtocolHandler ["http-nio-8080"],
+				"logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:26.777, "message": Starting service [Tomcat],
+				"logger_name": o.a.catalina.core.StandardService, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:26.777, "message": Starting Servlet engine: [Apache Tomcat/9.0.68],
+				"logger_name": o.a.catalina.core.StandardEngine, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:26.818, "message": Initializing Spring embedded WebApplicationContext,
+				"logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:26.818, "message": Root WebApplicationContext: initialization completed in 1073 ms,
+				"logger_name": o.s.b.w.s.c.ServletWebServerApplicationContext, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:26.837, "message": HikariPool-1 - Starting...,
+				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:26.963, "message": HikariPool-1 - Start completed.,
+				"logger_name": com.zaxxer.hikari.HikariDataSource, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:26.971, "message": H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bdtodo',
+				"logger_name": o.s.b.a.h.H2ConsoleAutoConfiguration, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:27.061, "message": HHH000204: Processing PersistenceUnitInfo [name: default],
+				"logger_name": o.h.jpa.internal.util.LogHelper, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:27.102, "message": HHH000412: Hibernate ORM core version 5.6.12.Final,
+				"logger_name": org.hibernate.Version, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:27.208, "message": HCANN000001: Hibernate Commons Annotations {5.1.2.Final},
+				"logger_name": o.h.annotations.common.Version, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:27.285, "message": HHH000400: Using dialect: org.hibernate.dialect.H2Dialect,
+				"logger_name": org.hibernate.dialect.Dialect, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:27.697, "message": HHH000476: Executing import script 'file:/home/lenovo/Documents/repositorios/projeto-todo/target/classes/import.sql',
+				"logger_name": o.h.t.s.internal.SchemaCreatorImpl, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:27.701, "message": HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform],
+				"logger_name": o.h.e.t.j.p.i.JtaPlatformInitiator, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:27.706, "message": Initialized JPA EntityManagerFactory for persistence unit 'default',
+				"logger_name": o.s.o.j.LocalContainerEntityManagerFactoryBean, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:28.022, "message": spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning,
+				"logger_name": o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration, "thread_name": [restartedMain], "level":
+				WARN  }
+{ "timestamp": 18-11-2022 17:40:29.016, "message": LiveReload server is running on port 35729,
+				"logger_name": o.s.b.d.a.OptionalLiveReloadServer, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:29.031, "message": Starting ProtocolHandler ["http-nio-8080"],
+				"logger_name": o.a.coyote.http11.Http11NioProtocol, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:29.046, "message": Tomcat started on port(s): 8080 (http) with context path '',
+				"logger_name": o.s.b.w.e.tomcat.TomcatWebServer, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:29.055, "message": Started ProjetoTodoApplication in 3.655 seconds (JVM running for 4.113),
+				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:29.058, "message": API iniciada com sucesso,
+				"logger_name": b.c.m.p.ProjetoTodoApplication, "thread_name": [restartedMain], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:30.988, "message": Initializing Spring DispatcherServlet 'dispatcherServlet',
+				"logger_name": o.a.c.c.C.[Tomcat].[localhost].[/], "thread_name": [http-nio-8080-exec-2], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:30.989, "message": Initializing Servlet 'dispatcherServlet',
+				"logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8080-exec-2], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:30.990, "message": Completed initialization in 1 ms,
+				"logger_name": o.s.web.servlet.DispatcherServlet, "thread_name": [http-nio-8080-exec-2], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:31.128, "message": Atualizando usuário com id: [1] ,
+				"logger_name": b.c.m.p.service.UsuarioService, "thread_name": [http-nio-8080-exec-2], "level":
+				INFO  }
+{ "timestamp": 18-11-2022 17:40:34.134, "message": Resolved [br.com.magnasistemas.projetotodo.exception.BadRequestException: Não foi possível encontrar o usuário com o id: 7],
+				"logger_name": o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver, "thread_name": [http-nio-8080-exec-3], "level":
+				WARN  }
+{ "timestamp": 18-11-2022 17:40:40.319, "message": Resolved [br.com.magnasistemas.projetotodo.exception.BadRequestException: Não foi possível encontrar a tarefa com o id: 7],
+				"logger_name": o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver, "thread_name": [http-nio-8080-exec-5], "level":
+				WARN  }

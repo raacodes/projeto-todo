@@ -80,7 +80,7 @@ public class TodoService {
 			item.setDescricao(todoDto.getDescricao());
 			item.setStatus(todoDto.getStatus());
 			return item;
-		}).orElseThrow(() -> new RuntimeException("Não foi possível encontrar a tarefa com o id: " + id));
+		}).orElseThrow(() -> new BadRequestException("Não foi possível encontrar a tarefa com o id: " + id));
 		LOGGER.info("Atualizando tarefa com id: [{}] ", id);
 		return converterEntityParaDTO(entidade);
 	}
