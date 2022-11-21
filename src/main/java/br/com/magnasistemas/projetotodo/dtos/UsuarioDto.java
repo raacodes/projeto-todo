@@ -2,9 +2,12 @@ package br.com.magnasistemas.projetotodo.dtos;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import br.com.magnasistemas.projetotodo.entities.TodoEntity;
 import io.swagger.v3.oas.annotations.media.Schema;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class UsuarioDto {
 
 	private Long id;

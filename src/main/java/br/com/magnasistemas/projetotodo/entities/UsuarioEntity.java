@@ -24,14 +24,11 @@ public class UsuarioEntity {
 	private List<TodoEntity> todoList = new ArrayList<>();
 
 	public UsuarioEntity() {
-
 	}
 
-	public UsuarioEntity(Long id, String usuario, String senha, List<TodoEntity> todoList) {
-		this.id = id;
+	public UsuarioEntity(String usuario, String senha) {
 		this.usuario = usuario;
 		this.senha = senha;
-		this.todoList = todoList;
 	}
 
 	public Long getId() {

@@ -16,7 +16,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import br.com.magnasistemas.projetotodo.enums.Status;
 
-
 @Entity
 @Table(name = "tb_todo")
 public class TodoEntity {
@@ -31,6 +30,14 @@ public class TodoEntity {
 	@ManyToOne(fetch = FetchType.LAZY)
 	private UsuarioEntity usuarioEntity;
 	private LocalDateTime dataCriacao;
+
+	public TodoEntity() {
+	}
+
+	public TodoEntity(String titulo, String descricao) {
+		this.titulo = titulo;
+		this.descricao = descricao;
+	}
 
 	public Long getId() {
 		return id;

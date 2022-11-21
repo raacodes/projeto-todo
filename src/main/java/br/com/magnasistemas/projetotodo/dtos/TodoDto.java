@@ -3,11 +3,13 @@ package br.com.magnasistemas.projetotodo.dtos;
 import java.time.LocalDateTime;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import br.com.magnasistemas.projetotodo.entities.UsuarioEntity;
 import br.com.magnasistemas.projetotodo.enums.Status;
 import io.swagger.v3.oas.annotations.media.Schema;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class TodoDto {
 
 	private Long id;
